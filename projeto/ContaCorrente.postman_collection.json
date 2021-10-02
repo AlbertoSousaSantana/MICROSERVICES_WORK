@@ -1,0 +1,223 @@
+{
+	"info": {
+		"_postman_id": "b891df5f-3a98-4caf-bdd0-fe56dc608935",
+		"name": "ContaCorrente",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8180/contacorrente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"titular\" : \"Alberto2\",\r\n\"agencia\" : \"3279\",\r\n\"numeroConta\" : \"13068\",\r\n\"saldo\" : 1000\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8180/contacorrente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8180",
+					"path": [
+						"contacorrente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8180/contacorrente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8180/contacorrente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8180",
+					"path": [
+						"contacorrente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8180/contacorrente/sacar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n\"valor\" : \"100\",\r\n\"tipo\" : \"DEBITO\",\r\n\"conta\": {\r\n        \"id\": 1\r\n    }\r\n\r\n}\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8180/contacorrente/sacar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8180",
+					"path": [
+						"contacorrente",
+						"sacar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8180/contacorrente/depositar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n\"valor\" : \"400\",\r\n\"tipo\" : \"CREDITO\",\r\n\"conta\": {\r\n        \"id\": 1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8180/contacorrente/depositar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8180",
+					"path": [
+						"contacorrente",
+						"depositar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8180/contacorrente/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8180/contacorrente/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8180",
+					"path": [
+						"contacorrente",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8180/contacorrente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\" : 1,\r\n\"titular\" : \"Alberto3\",\r\n\"agencia\" : \"3279\",\r\n\"numeroConta\" : \"13068\",\r\n\"saldo\" : 1000,\r\n\"rg\" : 435632760\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8180/contacorrente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8180",
+					"path": [
+						"contacorrente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8180/contacorrente/rg/435632760",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8180/contacorrente/rg/435632760",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8180",
+					"path": [
+						"contacorrente",
+						"rg",
+						"435632760"
+					]
+				},
+				"description": "delete"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8180/transacao",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8180/transacao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8180",
+					"path": [
+						"transacao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8180/transacao/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8180/transacao/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8180",
+					"path": [
+						"transacao",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

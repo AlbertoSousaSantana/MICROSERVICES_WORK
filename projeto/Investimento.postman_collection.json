@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "8227f5c5-8451-46ec-a2be-c179dbd7a80e",
+		"name": "Investimento",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8181/investimento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"nome\": \"CDB Pre fixado\",\r\n\"descricao\" : \"investimento renda fixa\",\r\n\"tipo\" : \"Renda Fixa\",\r\n\"valor\": 50,\r\n\"conta\" : 1\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8181/investimento",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"investimento"
+					]
+				},
+				"description": "POST teste api "
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8181/investimento",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8181/investimento",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"investimento"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
